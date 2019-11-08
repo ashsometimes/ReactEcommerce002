@@ -1,4 +1,13 @@
 .header {
+    h1 {
+        display: flex;
+        width: 40%;
+        align-content: center;
+        font-family: 'Pacifico', cursive;
+        font-size: 50px;
+        vertical-align: top;
+        text-decoration: underline;
+    }
     height: 70px;
     width: 100%;
     display: flex;
@@ -7,16 +16,18 @@
     .logo-container {
         height: 100%;
         width: 70px;
-        padding: 25px;
+        padding-top: 55px;
     }
     .options {
         width: 50%;
         height: 100%;
+        padding-top: 65px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         .option {
-            padding: 10px 15px;
+            padding: 10px 35px;
+            cursor: pointer;
         }
     }
 }
