@@ -1,18 +1,33 @@
 .header {
-    h1 {
-        display: flex;
-        width: 40%;
-        align-content: center;
-        font-family: 'Pacifico', cursive;
-        font-size: 50px;
-        vertical-align: top;
-        text-decoration: underline;
-    }
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+        }
+    }
+    h1 {
+        display: flex;
+        width: 40%;
+        align-content: center;
+        font-family: 'Open Sans', cursive;
+        font-size: 50px;
+        vertical-align: top;
+    }
     .logo-container {
         height: 100%;
         width: 70px;
@@ -28,6 +43,9 @@
         .option {
             padding: 10px 35px;
             cursor: pointer;
+        }
+        .option:hover {
+            text-decoration: underline;
         }
     }
 }

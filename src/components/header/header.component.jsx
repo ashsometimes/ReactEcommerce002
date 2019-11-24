@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.styles.scss';
 import {Link} from 'react-router-dom';
+
 import {ReactComponent as Logo} from '../../assets/header-logo.svg';
 import { auth } from '../../firebase/firebase.utils';
 
@@ -12,7 +13,7 @@ const Header = ({currentUser}) => (
             </Logo>
         </Link>
 
-        <h1>Shopaholicity</h1>
+        <h1>SHOPAHOLICITY</h1>
             
         <div className='options'>
             <Link className='option' to='/shop'>SHOP

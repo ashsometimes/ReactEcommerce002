@@ -11,10 +11,6 @@ $main-color: black;
     margin: 45px 0;
     .form-input {
         background: none;
-        background-color: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #E9E4F0, #D3CCE3);
-        ;
         color: $sub-color;
         font-size: 18px;
         padding: 10px 10px 10px 5px;
